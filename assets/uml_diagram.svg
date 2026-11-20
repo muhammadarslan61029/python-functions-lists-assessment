@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="620" viewBox="0 0 1000 620">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<style>
+text { font-family: Arial, Helvetica, sans-serif; fill: #172033; }
+.heading { font-size: 25px; font-weight: 700; }
+.body { font-size: 16px; }
+.small { font-size: 13px; }
+.node { stroke-width: 2; rx: 12; }
+.arrow { stroke: #64748b; stroke-width: 2.2; fill: none; marker-end: url(#arrow); }
+</style>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#64748b"/></marker></defs>
+<text x="40" y="48" class="heading">Procedural Module Diagram</text>
+<rect x="355" y="85" width="290" height="64" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+<text x="500" y="111" text-anchor="middle" font-size="18" font-weight="700">main()</text><text x="500" y="133" text-anchor="middle" class="small">program entry point</text>
+<path d="M500 149 V190 H250 V220 M500 190 H750 V220" class="arrow"/>
+<rect x="55" y="220" width="390" height="300" rx="14" fill="#f8fafc" stroke="#2563eb" stroke-width="2"/>
+<text x="250" y="252" text-anchor="middle" font-size="19" font-weight="700">result_card_generator.py</text>
+<text x="80" y="288" class="body">Constants: SUBJECTS, grade thresholds</text>
+<text x="80" y="322" class="body">get_non_empty_text()</text><text x="80" y="352" class="body">get_roll_number() · get_mark()</text>
+<text x="80" y="382" class="body">calculate_grade() · build_result()</text>
+<text x="80" y="412" class="body">display_result() · main()</text>
+<text x="80" y="470" class="small">«calls» input → validation → calculation → output</text>
+<rect x="555" y="220" width="390" height="300" rx="14" fill="#f8fafc" stroke="#16a34a" stroke-width="2"/>
+<text x="750" y="252" text-anchor="middle" font-size="19" font-weight="700">class_marks_analyzer.py</text>
+<text x="580" y="288" class="body">Constants: mark range, PASS_MARK</text>
+<text x="580" y="322" class="body">get_positive_integer()</text><text x="580" y="352" class="body">get_non_empty_name() · get_mark()</text>
+<text x="580" y="382" class="body">collect_students() · calculate_statistics()</text>
+<text x="580" y="412" class="body">display_analysis() · main()</text>
+<text x="580" y="470" class="small">«calls» collect → validate → analyze → report</text>
+<text x="500" y="570" text-anchor="middle" class="small">Independent scripts; each main() calls its own module functions.</text>
+</svg>
